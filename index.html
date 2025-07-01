@@ -11,13 +11,16 @@
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">MathMemory</div>
       </div>
     </div>
     <script>
@@ -54,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/MathMemoryBuild.loader.js";
+      var loaderUrl = buildUrl + "/MathMemory.loader.js";
       var config = {
-        dataUrl: buildUrl + "/MathMemoryBuild.data.br",
-        frameworkUrl: buildUrl + "/MathMemoryBuild.framework.js.br",
-        codeUrl: buildUrl + "/MathMemoryBuild.wasm.br",
+        dataUrl: buildUrl + "/MathMemory.data.br",
+        frameworkUrl: buildUrl + "/MathMemory.framework.js.br",
+        codeUrl: buildUrl + "/MathMemory.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MathMemory",
